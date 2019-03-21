@@ -9,11 +9,12 @@ public class NewBehaviourScript : MonoBehaviour
     public bool isGrounded;
     Rigidbody2D rb;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
+   
     void Update()
     {
         float move = Input.GetAxis("Horizontal");
@@ -26,8 +27,11 @@ public class NewBehaviourScript : MonoBehaviour
         {
             isGrounded = true;
             rb.AddForce(new Vector2(rb.velocity.x, jumpforce));
+
         }
+      
     }
+
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -35,7 +39,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             isGrounded = false;
             Debug.Log("im touching ground");
-            rb.velocity = Vector2.zero;
+           // rb.velocity = Vector2;
         }
     }
 

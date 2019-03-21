@@ -25,7 +25,6 @@ public class PlayerSpriteController : MonoBehaviour {
     void Update () {
         if (!movementEnabled) return;
         float xInput = Input.GetAxisRaw("Horizontal");
-        float yInput = Input.GetAxisRaw("Vertical");
 	
 
         playerMoving = false;
@@ -43,11 +42,9 @@ public class PlayerSpriteController : MonoBehaviour {
         }
 
         anim.SetFloat("MoveX", xInput);
-        anim.SetFloat("MoveY", yInput);
         anim.SetBool("PlayerMoving", playerMoving);
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
-		int directionFacing;
 
 	}
     
@@ -65,7 +62,6 @@ public class PlayerSpriteController : MonoBehaviour {
             playerRigidBody.velocity = new Vector2(0f, 0f);
 
             anim.SetFloat("MoveX", 0f);
-            anim.SetFloat("MoveY", 0f);
             anim.SetBool("PlayerMoving", playerMoving);
         }
     }
