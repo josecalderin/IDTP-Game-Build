@@ -6,7 +6,7 @@ public class shadowmove : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<Rigidbody>().velocity = new Vector2(3, 0);
+        GetComponent<Rigidbody>().velocity = new Vector2(10, 0);
         Destroy(gameObject, 3.5f);
     }
 	
