@@ -17,6 +17,11 @@ public class shadowmove : MonoBehaviour {
 
         if (other.tag == "enemy")
         {
+            if (StepCounter.stepCount <= 395)
+            {
+                StepCounter.stepCount += 5;
+            }
+            HudText.scoreValue += 1;
             Destroy(gameObject);
             Destroy(GameObject.FindWithTag("enemy"));
             //Debug.Log("hit!!!");

@@ -41,13 +41,9 @@ public class PlayerSpriteController : MonoBehaviour {
             playerRigidBody.velocity = new Vector2( 0f, playerRigidBody.velocity.y);
         }
 
-        if (xInput > 0.5f && StepCounter.stepCount < 400)
+        if (xInput < -0.2f && StepCounter.stepCount > 0)
         {
-            StepCounter.stepCount += 1;
-        }
-        else if (xInput < -0.2f && StepCounter.stepCount > 0)
-        {
-            StepCounter.stepCount -= 2;
+            StepCounter.stepCount -= 1;
         }
 
         anim.SetFloat("MoveX", xInput);

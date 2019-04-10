@@ -7,7 +7,7 @@ public class CameraMov : MonoBehaviour
 {
 
     public GameObject player;       //Public variable to store a reference to the player game object
-    private int movingSpeed = (int)4f;
+    public int movingSpeed = (int)2.5f;
 
         
     void Update()
