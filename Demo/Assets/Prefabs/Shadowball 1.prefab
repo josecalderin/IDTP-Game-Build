@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2127936313474895893}
   m_Layer: 0
   m_Name: Shadowball 1
-  m_TagString: Untagged
+  m_TagString: att
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

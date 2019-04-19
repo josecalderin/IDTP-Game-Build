@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\attack.cs" />
+    <Compile Include="Assets\Scripts\Battle Scripts\boss.cs" />
+    <Compile Include="Assets\Scripts\Battle Scripts\GameFlow.cs" />
     <Compile Include="Assets\Scripts\CameraMov.cs" />
     <Compile Include="Assets\Scripts\coinpickup.cs" />
     <Compile Include="Assets\Scripts\counter.cs" />

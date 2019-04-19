@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - coin
   - enemy
+  - att
+  - Boss
   layers:
   - Default
   - TransparentFX

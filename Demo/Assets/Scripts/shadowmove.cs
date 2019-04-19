@@ -14,7 +14,7 @@ public class shadowmove : MonoBehaviour {
     // Update is called once per frame
     void OnParticleCollision(GameObject other)
     {
-
+        
         if (other.tag == "enemy")
         {
             if (StepCounter.stepCount <= 395)
@@ -27,9 +27,17 @@ public class shadowmove : MonoBehaviour {
             //Debug.Log("hit!!!");
             
         }
+        if (other.tag == "Boss")
+        {
+            GameFlow.currentDamage = 10;
+            Destroy(gameObject);
+
+        }
         else
         {
             Destroy(gameObject, 2.5f);
         }
     }
+
+    
 }
